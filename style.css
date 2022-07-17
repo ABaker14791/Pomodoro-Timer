@@ -5,9 +5,10 @@
 }
 
 :root {
-    --pomodoro: hsl(223, 25%, 40%);
-    --shortBreak: hsl(48, 23%, 40%);
-    --longBreak: hsl(105, 16%, 40%);
+    --pomodoro: hsla(224, 88%, 77%, 0.678);
+    --shortBreak: hsla(12, 86%, 67%, 0.753);
+    --longBreak: hsla(113, 66%, 46%, 0.562);
+    --gradient: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
 }
 
 body {
@@ -25,6 +26,7 @@ body {
 
 #js-progress {
     width: 50%;
+    height: 40px;
 }
 
 .modes {
@@ -33,16 +35,23 @@ body {
 }
 
 .modes button {
-    padding: 1.2rem 2.4rem;
+    padding: 1rem 2rem;
+    color: #fff;
+    font-size: 1.2rem;
     border: none;
-    border-radius: 5px;
     cursor: pointer;
     background-color: transparent;
+}
+
+.modes .active {
+    border-bottom: 2px solid #fff;
+    font-weight: bold;
 }
 
 .timer {
     font-size: 8rem;
     display: flex;
+    color: #fff;
 }
 
 .start-btn {
